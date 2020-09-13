@@ -1,29 +1,115 @@
 # logParser
 -  Requirements
-    - python3.7 or greater is required
-    - file absolute path should be given while asking in console otherwise
-        - file should be present in the current directory with name database.csv and
-        - press enter in console when asked for file path 
+    - python3.7 or greater should be present in your system
 
-# Start 
-python3 app.py
+# Start Process and commands
+Go to logParser directory
+
+```
+source env/bin/activate
+```
+
+```
+python3 app.py 'file_path' (file_path is optional)
+``` 
 
 # Sample output
-Method  URL    Frequency
+************ Throughput Result **************
+<html>
+  <head>
+  <table>
+    <tr>
+        <th>Method</th>
+        <th>URL</th>
+        <th>Frequency</th>
+    </tr>
+    <tr>
+        <td>PUT</td>
+        <td>/book/{id}</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/book/{id}</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/person/add</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/book/{id}/return</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/person/all</td>
+        <td>3</td>
+    </tr>
+  </table>
+  
+  </head>
+</html>
 
-GET    /book/{id}    1
-
-POST    /person/add    1
-
-GET    /person/all    1
 
 
-<br/>
+********* Statistic Result ************
 
-Method  &nbsp; URL &nbsp;  Min Time &nbsp;  Max Time &nbsp;  Average Time
-
-GET  &nbsp; /person/all &nbsp;  124 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 124 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 124
-
-POST   /person/add &nbsp;  283 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   283 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  283
-
-GET &nbsp; /book/{id} &nbsp;  90 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  90 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  90
+<html>
+  <head>
+  <table>
+    <tr>
+        <th>Method</th>
+        <th>URL</th>
+        <th>Min Time</th>
+        <th>Max Time</th>
+        <th>Average Time</th>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/book/{id}/return</td>
+        <td>45.0</td>
+        <td>78.0</td>
+        <td>63.0</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/book/{id}</td>
+        <td>37</td>
+        <td>110</td>
+        <td>65.40</td>
+    </tr>
+    <tr>
+        <td>PUT</td>
+        <td>/book/{id}</td>
+        <td>20</td>
+        <td>234</td>
+        <td>98.57</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/person/{id}/details</td>
+        <td>35</td>
+        <td>87</td>
+        <td>66.67</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/person/all</td>
+        <td>60.0</td>
+        <td>102.0</td>
+        <td>86.67</td>
+    </tr>
+    <tr>
+        <td>POSt</td>
+        <td>/person/add</td>
+        <td>60.0</td>
+        <td>140.0</td>
+        <td>97.25</td>
+    </tr>
+  </table>
+  
+  </head>
+</html>
