@@ -1,10 +1,9 @@
 # logParser
 -  Requirements
     - python3.7 or greater is required
-    - input file name should be database.csv
     - file absolute path should be given while asking in console otherwise
-        - file should be present in the current directory
-        - press enter in console when asking for file path 
+        - file should be present in the current directory with name database.csv and
+        - press enter in console when asked for file path 
 
 # Start 
 python3 app.py
