@@ -1,0 +1,4 @@
+timestamp,url,method,response_time,response_code
+1581333404,/person/all,GET,124,200
+1581333441,/person/add,POST,283,201
+1581333450,/book/2,GET,90,200

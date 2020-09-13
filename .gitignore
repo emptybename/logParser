@@ -1,0 +1,5 @@
+.idea/
+database/__pycache__/
+database/helper/__pycache__/
+result_finder/__pycache__/
+utilities/__pycache__/
