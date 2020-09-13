@@ -22,4 +22,8 @@ def main(file_path):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:][0])
+    if len(sys.argv) > 1:
+        file_path = sys.argv[1:][0]
+    else:
+        file_path = None
+    main(file_path)
